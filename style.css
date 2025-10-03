@@ -1,0 +1,279 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url('back image.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #FFD700;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* General Page Padding */
+.page {
+  display: none;
+  padding: 110px 20px 60px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Left Shift Class for Sections */
+.left-shift {
+  text-align: left;
+  margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  background: rgba(0,0,0,0.4);
+  padding: 140px 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 15px;
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Offer Image in Home Hero */
+.offer-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.offer-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Shoes Section */
+.shoes-page h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+.shoes-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.shoe-card {
+  background: rgba(255,255,255,0.95);
+  color: #000;
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.shoe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.shoe-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.shoe-card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* About Section */
+.about-page {
+  background: rgba(0,0,0,0.5);
+  padding: 35px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 800px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Contact Section Professional Style */
+.contact-page {
+  background: rgba(0,0,0,0.7);
+  padding: 50px 25px;
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 1000px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.contact-text h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.contact-text p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 130px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ff9800;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 15px;
+    flex-direction: column;
+  }
+  .hero h1 { font-size: 30px; }
+  .hero p { font-size: 14px; }
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .shoes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shoe-card {
+    width: 90%;
+  }
+  .about-page, .contact-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact-text h2 { font-size: 28px; }
+  .contact-text p { font-size: 14px; }
+  .contact-form button { font-size: 14px; }
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeWorld - Professional Shoes Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">ShoeStore</div>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('shoes')">Shoes</a>
+      <a href="#" onclick="showPage('about')">About</a>
+      <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="page active hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text left-shift">
+      <h1>Step Into Your Style</h1>
+      <p>Welcome to ShoeStore! Explore the perfect mix of style, comfort, and performance with our curated sneaker collection. Your next favorite shoes are just a click away.</p>
+      <button onclick="showPage('shoes')">Shop Now</button>
+      
+      <!-- Offer / Advertisement Image -->
+      <div class="offer-image">
+        <img src="download - 2025-10-04T001826.568.jpeg" alt="Special Offer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoes Section -->
+  <section id="shoes" class="page shoes-page left-shift">
+    <h2>Our Shoe Collection</h2>
+    <p>From sporty sneakers to casual everyday wear, our collection offers high-quality shoes designed for your lifestyle. Find your perfect pair and step confidently wherever you go.</p>
+    <div class="shoes-container">
+      <div class="shoe-card">
+        <img src="nikeair.jpeg" alt="Nike Air">
+        <h3>Nike Air Max</h3>
+        <p>Ultra-lightweight running shoes for everyday comfort and performance.</p>
+      </div>
+      <div class="shoe-card">
+        <img src="casual sneakers.jpeg" alt="Adidas Classic">
+        <h3>Adidas Classic</h3>
+        <p>Iconic sneakers for casual wear with superior durability and style.</p>
+      </div>
+      <div class="shoe-card">
+        <img src="puma shoes.jpeg" alt="Puma Sport">
+        <h3>Puma Sport</h3>
+        <p>High-performance training shoes with enhanced grip and support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="page about-page left-shift">
+    <h2>About ShoeStore </h2>
+       <p>ShoeStore is dedicated to providing the finest shoes combining fashion, comfort, and quality. We partner with top brands to bring you the latest sneaker trends, innovative sports shoes, and stylish casual wear. Our mission is to ensure that every step you take is confident and comfortable.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="page contact-page">
+    <div class="contact-container">
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>Have questions, suggestions, or want to know more about our shoes? Reach out! Our friendly team is always ready to help you find the perfect pair.</p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
